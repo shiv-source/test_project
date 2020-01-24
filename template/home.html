@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<div>
+    <br>
+    <br>
+    {% for list in data %}
+    <div class="card bg-info text-white">
+        <div class="card-body">Registered User Details:</div>
+        <div class="card-body"> First Name : {{list.first_name}} </div>
+        <div class="card-body"> Last Name : {{list.last_name}} </div>
+        <div class="card-body">User Name : {{list.username}} </div>
+        <div class="card-body"> Email: {{list.email}} </div>
+         <div class="card-body"> Phone Number : {{list.phone_no}} </div>
+
+
+
+
+    </div>
+    {% endfor %}
+    <br>
+
+</div>
+
+{% endblock %}
